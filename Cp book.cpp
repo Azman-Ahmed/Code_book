@@ -124,7 +124,9 @@ int phi(int n)
         res*=(n-1);
     }
     return res;
-}
+} //O(sqrt(n))
+
+///Euler Totient function returns the number of positive integer upto n which is co prime to n [gcd = 1]
 
 
 
