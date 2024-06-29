@@ -128,6 +128,32 @@ int phi(int n)
 
 ///Euler Totient function returns the number of positive integer upto n which is co prime to n [gcd = 1]
 
+///Euler Totient Function Sieve
+int N = 1000;
+vector<int> phi(n);
+
+void phi_sieve()
+{
+    for(int i = 1; i<=N; i++)
+    {
+        phi[i] = i;
+    }
+    for(int i = 2; i<=N; i++)
+    {
+        if(phi[i]==i)
+        {
+            for(int j = i; j<=N; j+=i)
+            {
+                phi[j]/=i;
+                phi[j]*=(i-1)
+            }
+        }
+    }
+} //O(nlog log n)
+
+
+
+
 
 
 
