@@ -117,6 +117,13 @@ int phi(int n)
             while(n%i==0) n/=i;
         }
     }
+
+    if(n>1)
+    {
+        res/=n;
+        res*=(n-1);
+    }
+    return res;
 }
 
 
