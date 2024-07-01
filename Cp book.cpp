@@ -169,7 +169,9 @@ int extended_gcd(int a, int b, int *x, int *y)
 }
 bool linear_diophantine(int a, int b, int c, int *x, int *y)
 {
-
+    int x0, y0;
+    int g = extended_gcd(abs(a), abs(b), &x0, &y0);
+    if(c % g) return false;
 }
 
 
