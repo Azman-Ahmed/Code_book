@@ -176,6 +176,9 @@ bool linear_diophantine(int a, int b, int c, int *x, int *y)
     *y = y0 * (c/g);
 
     if(a < 0) *x = - *x;
+    if(b < 0) *y = - *y;
+
+    return true;
 }
 
 
