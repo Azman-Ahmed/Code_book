@@ -153,6 +153,11 @@ void phi_sieve()
 
 ///Linear Diophantine Equation, Extended GCD
 
+int extended_gcd(int a, int b, int *x, int *y)
+{
+
+}
+
 
 
 
