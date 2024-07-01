@@ -165,6 +165,11 @@ int extended_gcd(int a, int b, int *x, int *y)
     int gcd = extended_gcd(b % a, a, &x1, &y1);
     *x = y1 - (b / a) * x1;
     *y = x1;
+    return gcd;
+}
+bool linear_diophantine(int a, int b, int c, int *x, int *y)
+{
+
 }
 
 
