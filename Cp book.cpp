@@ -181,6 +181,7 @@ bool linear_diophantine(int a, int b, int c, int *x, int *y)
     return true;
 }
 ///The total number of ways for selecting r elements out of n options are nCr = (n!)/(r! * (n-r)!)
+///nPr = (n!)/(n-r)!
 
 
 
