@@ -151,6 +151,8 @@ void phi_sieve()
     }
 } //O(nlog log n)
 
+///Linear Diophantine Equation, Extended GCD
+
 
 
 
